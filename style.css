@@ -1,0 +1,193 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: #f5f7fb;
+    color: #222; 
+}
+
+/* NAV BAR */
+.navbar{
+    color: #0d1b2a;
+    padding: 20px 8% 10px ;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: #fff;
+}
+.nav-link{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+.nav-link a:hover {
+    color:#00b4d8;
+    /* font-size: 24px; */
+    /* font-weight: bold; */
+}
+/* BUTTONS */
+.btn{
+    background: #00b4d8;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #0056c7;
+}
+.btn-outline{
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 20px;
+    border-radius:5px ;
+    cursor: pointer;
+}
+
+.hero{
+    background: linear-gradient(rgba(0,0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(image/mine.jfif);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 10%;
+}
+
+.hero h2 {
+font-size: 55px;
+margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+    .hero-btn{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+.hero-features{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.hero-features h3{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+/* ABOUT SECTION */
+.about{
+    padding: 80px 10%;
+    text-align: center;
+}
+.about h2{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+/* TRACK */
+.tracks{
+    padding: 80px 10%;
+}
+
+.tracks h2{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.track-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.card{
+    background:white ;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+/* BENFITS SECTION */
+.benefits{
+    background: #0d1b2a;
+    color: #fff;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.benefits h2{
+    margin-bottom: 20px;
+}
+
+.benefits ul{
+    padding-left: 20px;
+    list-style: none;
+}
+.footer{
+    background: #111;
+    color: #fff;
+    padding: 60px 10%;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.copyright{
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width:900px){
+    .nav-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .nav-link{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .hero h2{
+        font-size: 38px;
+    }
+
+    .hero-features{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .track-container{
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns: 1fr;
+    }
+}
